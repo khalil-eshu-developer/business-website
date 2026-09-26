@@ -5,6 +5,7 @@ import Services from './components/Services'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AdminLeads from './components/AdminLeads'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             </>
           }
         />
+        <Route path="/admin/leads" element={<AdminLeads />} />
       </Routes>
       <Footer />
     </div>
