@@ -2,8 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import { motion } from 'framer-motion'
 
-const API_URL = 'http://localhost:5000/api/leads'
-
+const API_URL = 'https://business-website-server.onrender.com/api/leads'
 const Contact = () => {
   const [form, setForm] = useState({
     name: '',
