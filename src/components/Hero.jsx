@@ -99,7 +99,7 @@ const Hero = () => {
             transition={{ duration: 3, repeat: Infinity, delay: 1 }}
             className="absolute -bottom-4 -right-4 glass px-4 py-2 rounded-full text-sm border border-primary/30"
           >
-            🏆 5+ Years Experience
+            🏆 1+ Years Experience
           </motion.div>
         </motion.div>
       </div>

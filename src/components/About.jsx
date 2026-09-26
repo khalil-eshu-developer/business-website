@@ -4,7 +4,7 @@ import { FaCheckCircle } from 'react-icons/fa'
 const stats = [
   { number: '100+', label: 'Projects Delivered' },
   { number: '50+', label: 'Happy Clients' },
-  { number: '5+', label: 'Years Experience' },
+  { number: '1+', label: 'Years Experience' },
   { number: '24/7', label: 'Support Available' },
 ]
 
@@ -29,7 +29,7 @@ const About = () => {
           >
             <p className="text-gray-300 mb-6 leading-relaxed">
               We are a team of passionate developers and marketers helping businesses 
-              succeed in the digital world. With 5+ years of experience, we deliver 
+              succeed in the digital world. With 1+ years of experience, we deliver 
               results that matter — from stunning websites to high-converting ad campaigns.
             </p>
 
