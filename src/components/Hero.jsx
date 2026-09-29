@@ -3,9 +3,10 @@ import { FaCheckCircle } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-32">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
+        {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -72,6 +73,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
+        {/* RIGHT SIDE - Dashboard Mockup */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -79,13 +81,59 @@ const Hero = () => {
           className="flex justify-center relative"
         >
           <motion.div
-            animate={{ y: [0, -20, 0] }}
+            animate={{ y: [0, -15, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-full max-w-md h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl border border-primary/30 flex items-center justify-center text-8xl pulse-ring"
+            className="w-full max-w-md bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl border border-primary/30 p-6 shadow-2xl shadow-primary/20"
           >
-            💼
+            {/* Dashboard Header */}
+            <div className="flex items-center justify-between mb-6 pb-4 border-b border-primary/20">
+              <div>
+                <p className="text-xs text-gray-400">Campaign Performance</p>
+                <p className="text-lg font-bold text-white">This Month</p>
+              </div>
+              <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded-full border border-green-500/30">
+                ↑ 42%
+              </span>
+            </div>
+
+            {/* Stats Cards */}
+            <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="bg-slate-800/50 rounded-xl p-4 border border-primary/10">
+                <p className="text-xs text-gray-400 mb-1">Total Reach</p>
+                <p className="text-2xl font-bold text-primary">125K</p>
+                <p className="text-xs text-green-400">↑ 42.5%</p>
+              </div>
+              <div className="bg-slate-800/50 rounded-xl p-4 border border-primary/10">
+                <p className="text-xs text-gray-400 mb-1">Conversions</p>
+                <p className="text-2xl font-bold text-secondary">1.2K</p>
+                <p className="text-xs text-green-400">↑ 67.2%</p>
+              </div>
+            </div>
+
+            {/* Chart Bars */}
+            <div className="mb-6">
+              <p className="text-xs text-gray-400 mb-3">Weekly Performance</p>
+              <div className="flex items-end justify-between gap-2 h-24">
+                {[40, 65, 45, 80, 55, 90, 70].map((h, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ height: 0 }}
+                    animate={{ height: `${h}%` }}
+                    transition={{ delay: 0.5 + i * 0.1, duration: 0.5 }}
+                    className="flex-1 bg-gradient-to-t from-primary to-secondary rounded-t-md"
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Dashboard Footer */}
+            <div className="flex items-center justify-between text-xs text-gray-400 pt-4 border-t border-primary/20">
+              <span>📊 Google Analytics</span>
+              <span>Meta Ads</span>
+            </div>
           </motion.div>
 
+          {/* Floating Badge 1 */}
           <motion.div
             animate={{ y: [0, -15, 0] }}
             transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
@@ -94,6 +142,7 @@ const Hero = () => {
             ⚡ Fast Delivery
           </motion.div>
 
+          {/* Floating Badge 2 */}
           <motion.div
             animate={{ y: [0, 15, 0] }}
             transition={{ duration: 3, repeat: Infinity, delay: 1 }}
