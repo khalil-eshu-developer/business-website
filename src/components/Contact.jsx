@@ -111,7 +111,7 @@ const Contact = () => {
             >
               <option>Web Development</option>
               <option>Digital Marketing</option>
-              <option>Mobile Apps</option>
+          
               <option>SEO Optimization</option>
               <option>UI/UX Design</option>
               <option>General Inquiry</option>

@@ -18,7 +18,6 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-400 text-sm">
             <li><a href="#services" className="hover:text-primary transition">Web Development</a></li>
             <li><a href="#services" className="hover:text-primary transition">Digital Marketing</a></li>
-            <li><a href="#services" className="hover:text-primary transition">Mobile Apps</a></li>
             <li><a href="#services" className="hover:text-primary transition">SEO</a></li>
           </ul>
         </div>

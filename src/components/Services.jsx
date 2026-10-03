@@ -31,11 +31,7 @@ const services = [
     title: 'Google My Business', 
     desc: 'Local SEO & GMB optimization to attract local customers.' 
   },
-  { 
-    icon: <FaMobileAlt />, 
-    title: 'Mobile Apps', 
-    desc: 'Cross-platform mobile applications for iOS & Android.' 
-  },
+  
   { 
     icon: <FaSearch />, 
     title: 'SEO Optimization', 
