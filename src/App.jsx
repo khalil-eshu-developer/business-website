@@ -8,10 +8,12 @@ import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import AdminLeads from './components/AdminLeads'
+import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
   return (
     <div className="bg-dark text-white min-h-screen">
+      <WhatsAppButton />
       <Navbar />
       <Routes>
         <Route
